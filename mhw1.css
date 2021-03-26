@@ -1,0 +1,238 @@
+body{
+    margin:0;
+}
+header{
+    color:white;
+    background-image: url(https://www.comune.rivoli.to.it/wp-content/uploads/2020/11/Agri-with-tractor.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+
+header::before{
+    content: "";
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background-color: rgba(0,0,0, 0.3);
+}
+
+a{
+    cursor:pointer;
+}
+
+#links a{
+    margin: 15px;
+}
+
+a.button{
+    padding: 10px 15px;
+    border:2px solid rgb(255, 255, 255);
+    border-radius: 100px;
+}
+
+h1 a.button{
+    border:0;
+    background-color:rgb(0, 117, 0);
+    color:white;
+}
+
+a.button:hover {
+    background-color:green;
+    color:rgb(221, 221, 28);
+}
+
+h1 a.button:hover{
+    background-color: rgba(0,117,0, 0.75);
+    color:whitesmoke;
+}
+
+header nav{
+    position:fixed;
+    top:0;
+    left:0;
+    right: 0;
+    font-size:14 px;
+    padding:20px;
+
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    align-items:center;
+}
+
+header nav #logo img{
+    position:absolute;
+    top:0;
+    left:0;
+    margin:10px 15px;
+    max-height: 150%;
+    width: auto;
+}
+
+header h1 {
+    font-weight: normal;
+    text-align: center;
+    z-index: 1;
+    font-family: "Roboto", monospace;
+    
+}
+
+header nav{
+    z-index:1;
+}
+
+header h1 em{
+    display:block;
+    margin:5px;
+    font-family: "Brygada 1918", serif;
+}
+
+header h1 strong{
+    font-family: "Brygada 1918", serif;
+}
+
+header h1 .button{
+    font-family: "Brygada 1918", serif;
+    font-size: 25px;
+    
+}
+#spaziatura{
+    display:block;
+    /*flex-direction: row;*/
+    position:relative;
+    background-color: whitesmoke;
+    height: 150px;
+    z-index: -10;
+
+}
+
+section{
+    /*position:relative;*/
+    background-position:center;    
+    background-color:#4e3b31;    
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+     
+    height:600px;
+    margin-top: 20px;   
+}
+section .box{
+    display:flex;
+    flex-direction: column;
+    
+    background-color:white;
+    width: 30%;
+    height: 100%; 
+    margin-top:-80px;
+    text-align:left;
+    justify-content: flex-start;
+    padding:5px;
+}
+
+section  #one{
+    font-family: "Brygada 1918", serif;
+    text-align: center;
+    font-size: 14px;
+    
+}
+
+section #two{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    line-height:1.2;
+}
+
+section #three{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    font-style:oblique;
+}
+
+p{
+    z-index:1000;
+}
+
+#autore{
+    text-align: end;
+    
+}
+
+footer{
+    background-color: black;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    height: 150px;
+    margin-top:20px;
+    color:white;
+    letter-spacing: 2px;
+}
+
+#menu {
+    display: none;
+  }
+  
+#menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+@media screen and (max-width: 500px){
+    
+    section{
+        flex-direction:column;
+        height: auto;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    section .box{
+        margin:10px;
+        width:70%;
+    }
+
+    header nav #logo img{
+        width: 10%;
+        font-size: 100%;
+    }
+
+    #links{
+        display:none;
+    }
+
+    #menu {
+        display:block;
+    }
+
+    header{
+        height:300px;
+    }
+
+    header h1 strong{
+        font-size: 60%;
+    }
+
+    header h1 em{
+        font-size:60%;
+    }
+
+    header h1 .button{
+        font-size:60%;
+    }
+
+    
+}
+
+
